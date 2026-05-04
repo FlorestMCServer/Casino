@@ -1,0 +1,24 @@
+name: CasinoPlugin
+version: '1.0'
+main: ru.florestdev.casinoPlugin.CasinoPlugin
+api-version: '1.21'
+prefix: CasinoPlugin
+load: STARTUP
+authors: [ FlorestDev ]
+description: Private FlorestMC's plugin on Casino.
+commands:
+  casino:
+    aliases:
+      - cas
+      - dep
+      - dodep
+    permission: casino.cmd
+    permission-message: You haven't got casino.cmd!
+permissions:
+  casino.cmd:
+    description: Standart permission
+    default: not op
+depend:
+  - Vault
+
+folia-supported: true
